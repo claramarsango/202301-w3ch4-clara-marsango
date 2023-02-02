@@ -2,7 +2,11 @@ export default class Component {
   protected element: HTMLElement;
   #parentElement: HTMLElement | null;
 
-  constructor(parentElement: HTMLElement, tag: string, cssClass: string = '') {
+  constructor(
+    parentElement: HTMLElement | null,
+    tag: string,
+    cssClass: string = '',
+  ) {
     this.element = document.createElement(tag);
     this.element.className = cssClass;
     this.#parentElement = parentElement;
