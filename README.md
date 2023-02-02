@@ -1,15 +1,13 @@
-Crea una aplicación en JS que cree una interfaz con los siguientes componentes:
+# Week 3 - Challenge 3
 
-App: Componente que contiene a todos los demás.
+## Series
 
-Button: Componente que muestra un texto recibido y al hacer clic lanza una acción recibida. El tipo de button también lo recibe.
+Aquí tienes una aplicación maquetada con HTML y CSS. Se trata de una aplicación que gestiona un listado de series, separándolas entre series vistas y no vistas.
 
-PersonalDataForm: Es un formulario que contiene dos campos de texto, uno para nombre y otro para apellido. También contiene una instancia del componente Button con type submit, que al ser clicado no tiene que hacer nada especial (más allá de lo que ya hace por defecto).
+Esta aplicación se alimentará de un objeto que tienes en el archivo `series.js`.
 
-Greeting: Es un componente que sólo aparecerá cuando se haya enviado el formulario, y contendrá un saludo con el nombre y apellidos introducidos en el formulario.
+Tienes que mostrar un listado de series, separándolas entre vistas y no vistas. Cada serie tiene que mostrar toda la información que ves en la maqueta. Si la serie es no vista, sus estrellas tienen que estar a 0 y el usuario debería poder clicar para valorar la serie con las estrellas que crea necesario. Al clicar en una estrella, la aplicación debe modificar la valoración y la serie debe pasar de no vista a vista (no hay ninguna manera de pasar una serie de vista a no vista).
 
-Testing de componentes
+Fíjate en los mensajes con la clase `info` y haz que aparezca uno u otro dependiendo de la cantidad de series vistas/no vistas.
 
-BEM
-
-CSS básico
+Si el usuario hace click en el icono de la x, la serie se debe eliminar.
